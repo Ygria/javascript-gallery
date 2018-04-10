@@ -9,11 +9,12 @@
 </head>
 <body>
     <h1>My favorite characters</h1>
-    <ul>
-        <li><a href="images/yexiu.jpg" title="Ye Xiu"  onclick="showPic(this);return false;">Ye Xiu</a></li>
-        <li><a href="images/spidey.jpg" title="Spidey" onclick="showPic(this);return false;">Spidey</a></li>
-        <li><a href="images/House.jpg" title="House" onclick="showPic(this);return false;">House</a></li>
-        <li><a href="images/Gintoki.jpg" title="Gintoki" onclick="showPic(this);return false;">Gintoki</a></li>
+    <ul id="imagegallery">
+        <!-- 为什么href中有值而不是使用"#"：实现平稳退化 -->
+        <li><a href="images/yexiu.jpg" title="Ye Xiu"  >Ye Xiu</a></li>
+        <li><a href="images/spidey.jpg" title="Spidey">Spidey</a></li>
+        <li><a href="images/House.jpg" title="House" >House</a></li>
+        <li><a href="images/Gintoki.jpg" title="Gintoki">Gintoki</a></li>
     </ul>
    
     <img id="placeholder" src="images/placeholder.png" alt="my image gallery">
